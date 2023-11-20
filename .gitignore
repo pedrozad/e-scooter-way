@@ -1,0 +1,13 @@
+results-multiobjective
+
+data-osm/Malaga-Subway/map-Malaga-Subway-all--scooter-walking-subway--nearest-path.gpkg
+
+*.gpkg
+
+.gitattributes
+
+.venv
+
+.code
+
+.env
