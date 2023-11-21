@@ -29,7 +29,7 @@ MAX_COST = 1171337.95399999
 MIN_TIME = 1393.04855117
 MAX_TIME = 1745.86999262
 
-CONSTANT_COST = 0.000048 # Millions of euros per metre
+CONSTANT_COST = 0.00048 # Millions of euros per metre
 
 # # I/O Configuration
 import sys
@@ -370,8 +370,8 @@ def evaluation(individual):
     objective1 = (objective1-MIN_TIME)/(MAX_TIME-MIN_TIME)
    
     
-    objective2 = get_cost(individual) * CONSTANT_COST
-    objective2 = (objective2-MIN_COST)/(MAX_COST-MIN_COST)
+    objective2 = get_cost(individual) 
+    objective2 = ((objective2-MIN_COST)/(MAX_COST-MIN_COST))* CONSTANT_COST
  
     #print('\t\t\tOne evaluation in POB {} NGEN{} in seconds {} CXPB {} MUFLIP {} CPUS {}'.format(MU,NGEN,float(end_time_eva-start_time_eva),CXPB, MUFLIP,cpus))
     return objective1, objective2
